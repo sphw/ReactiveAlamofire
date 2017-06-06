@@ -155,9 +155,9 @@ extension DataRequest {
 
 extension SignalProtocol {
 
-  public func split(_ isDelimiter: @escaping (Element) -> Bool) -> Signal<[Element], Error> {
+  public func split(_ isDelimiter: @escaping (X) -> Bool) -> Signal<[X], Error> {
     return Signal { observer in
-      var buffer: [Element] = []
+      var buffer: [X] = []
       return self.observe { event in
         switch event {
         case .next(let element):
