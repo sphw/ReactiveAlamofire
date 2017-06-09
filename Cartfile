@@ -1,2 +1,2 @@
-github "ReactiveKit/Bond" "swift-4"
+github "sphw/ReactiveKit" "master"
 github "Alamofire/Alamofire" ~> 4.2
